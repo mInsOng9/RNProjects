@@ -21,7 +21,10 @@ export default Login= (props)=>{
         // 비동기 방식으로 동작하기에 요청결과가 끝나고 나서 추가 작업을 함.
         // 이때 사용하는 기법이 promiss 기법의 .then() 메소드..
         AsyncStorage.setItem('email', email).then(()=>{
-            Alert.alert('로그인 성공', email+"님 환영합니다.")            
+            Alert.alert('로그인 성공', email+"님 환영합니다.")    
+            
+            //로그인이 되었으니 앱의 메인화면인 Movie List를 가진 Nav로 이동
+            props.navigation.replace('MainDrawerNav')
         })
     }
 

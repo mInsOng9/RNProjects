@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "Tp01MovieApp";
+    return "TP01MovieApp";
   }
 
   /**
